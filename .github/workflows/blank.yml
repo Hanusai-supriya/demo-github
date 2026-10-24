@@ -1,0 +1,16 @@
+
+name: github-demo
+
+on:
+  workflow_dispatch:
+
+env:
+  NAME: Hanusai
+
+jobs:
+  hanu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display message
+        run: echo "$NAME is currently working on CI/CD pipeline"
+
